@@ -29,15 +29,16 @@ For each country separately:
 
 The PISA test scores are used **only** to define the target. They are **not** used as input features (that would be data leakage).
 
-## Features Used
+## Features Used (22 total)
 
-The model uses approximately 15 interpretable features covering:
-- Socioeconomic background (ESCS index, parents' education)
-- Home resources (books, computer, internet, quiet study space)
-- School attendance (absences, tardiness)
-- Study habits and time (learning time, homework hours)
-- Student attitudes (sense of belonging, growth mindset)
-- Country
+The model uses interpretable features from the PISA student questionnaire:
+- **Socioeconomic background**: ESCS index, home possessions, parents' education and occupation
+- **School attendance**: skipped days, tardiness
+- **Study habits**: days studying before/after school, homework time
+- **Student attitudes and mindset**: growth mindset, perseverance, curiosity, math self-efficacy, math anxiety
+- **School environment**: sense of belonging, teacher support, disciplinary climate, student-teacher relationships
+- **Family**: family support
+- **Country**: which of the five countries the student is from
 
 ## Model
 
@@ -61,12 +62,13 @@ young-researchers-pisa-ml/
 ├── requirements.txt
 ├── .gitignore
 ├── notebooks/
-│   └── pisa_decision_tree.ipynb    # Main notebook (run this)
+│   └── pisa_decision_tree.ipynb      # Main notebook (run this in Colab)
 ├── data/
 │   └── processed/
-│       └── pisa_5countries.parquet # Pre-processed dataset (~5-10k students/country)
+│       ├── pisa_5countries.csv       # Processed dataset (3.9 MB)
+│       └── pisa_5countries.parquet   # Same data in Parquet format (1.3 MB)
 └── src/
-    └── process_pisa_data.py        # Data download & processing script
+    └── process_pisa_data.py          # Script to regenerate data from raw OECD source
 ```
 
 ## Requirements
