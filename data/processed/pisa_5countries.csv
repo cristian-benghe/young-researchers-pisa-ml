@@ -1,4 +1,4 @@
-CNT,ST004D01T,ST062Q01TA,ST062Q02TA,ST294Q02JA,ST295Q02JA,ST296Q04JA,RELATST,BELONG,PERSEVAGR,CURIOAGR,GROSAGR,FAMSUP,DISCLIM,TEACHSUP,MATHEFF,ANXMAT,MATHPERS,HISCED,HISEI,HOMEPOS,ESCS,top_10_percent
+country,gender,skipped_school_days,arrived_late,study_before_school_days,study_after_school_days,homework_hours,teacher_relationship,belonging,perseverance,curiosity,growth_mindset,family_support,classroom_discipline,teacher_support,math_confidence,math_anxiety,math_persistence,parent_education,parent_occupation,home_possessions,socioeconomic_status,top_10_percent
 DEU,1.0,1.0,2.0,3.0,3.0,2.0,1.164,0.5159,-0.2101,-0.3413,-0.2269,,-1.0311,1.5558,,0.5653,,3.0,56.0,-0.7684,-1.1606,0
 DEU,2.0,1.0,1.0,1.0,4.0,2.0,1.0385,0.1686,0.2623,-0.6608,-1.1252,0.4813,0.6461,-0.1002,2.1598,-0.7358,0.9441,5.0,65.12,2.0322,0.7054,0
 DEU,1.0,1.0,1.0,1.0,1.0,1.0,-1.0968,0.3519,-1.0178,0.048,-0.0737,0.304,0.9993,-1.7015,-3.3516,1.2587,-1.6732,8.0,31.08,-1.1321,-0.6005,0
